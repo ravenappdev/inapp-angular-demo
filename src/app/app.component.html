@@ -1,9 +1,16 @@
-<raven-inAppNotifications
-  [color]="'blue'"
-  [indicatorType]="'count'"
-  [fontStyle]="'Times'"
-  [userId]="'priyansh'"
-  [appId]="'ead40fc4-34a2-4e7c-abaf-337c00eef79a'"
-  [signature]="'a5d61c6d6855a168665b9d69bb0f50318f56c6d5e22879ab8f761d7012ea9d0d'"
-  [onClickNotification]="callbackFunction"
-></raven-inAppNotifications>
+<div class="navbar">
+  <h3>Raven</h3>
+  <div class="notification-center">
+    <raven-inapp-angular
+      [color]="'blue'"
+      [indicatorType]="'count'"
+      [userId]="'priyansh'"
+      [appId]="'ead40fc4-34a2-4e7c-abaf-337c00eef79a'"
+      [signature]="
+        'a5d61c6d6855a168665b9d69bb0f50318f56c6d5e22879ab8f761d7012ea9d0d'
+      "
+      [onClickNotification]="callbackFunction"
+    >
+    </raven-inapp-angular>
+  </div>
+</div>
