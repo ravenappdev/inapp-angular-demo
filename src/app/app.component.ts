@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-notification-center';
+
+  callbackFunction(message: any) {
+    alert(message.title)
+  }
 }
