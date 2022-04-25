@@ -1,27 +1,64 @@
-# DemoNotificationCenter
+# InApp Angular SDK Demo App
+This sample app shows how to use InApp Angular SDK in your own Angular app. The InApp Angular SDK allows you to -
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+* Manage notification center in you app.
 
-## Development server
+### InApp Angular SDK
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You can visit our [SDK docs](https://github.com/ravenappdev/inapp-angular-sdk) to setup the InApp angular SDK in your app.
 
-## Code scaffolding
+## How to run this sample app
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Step 1.&#x20;
 
-## Build
+Run the following commands in the project root directory :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm i @ravenapp/raven-inapp-angular
+```
 
-## Running unit tests
+### Step 2.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Import RavenInAppModule from @ravenapp/raven-inapp-angular and add it to the imports array in the app.module.ts file.
 
-## Running end-to-end tests
+```
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+import { AppComponent } from './app.component';
+import { RavenInAppModule } from 'raven-inapp';
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    RavenInAppModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-## Further help
+### Step 3.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Please refer to the below code to consume the InApp Angular SDK in your app.
+
+```
+<raven-inapp-angular
+      [color]="<color>"
+      [indicatorType]="<indicator_type>"
+      [userId]="<user_id>"
+      [appId]="<app_id>"
+      [signature]="<signature>"
+      [onClickNotification]="<callbackFunction_reference>"
+    >
+</raven-inapp-angular>
+```
+
+* indicatorType accepts two values i.e 'dot' and 'count'.
+* If you are passing strings directly without storing in variable, please enclose them in single quotes.
+
+You can use this code in any of the \*.component.html files.
+
