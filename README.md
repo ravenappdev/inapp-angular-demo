@@ -49,6 +49,7 @@ Please refer to the below code to consume the InApp Angular SDK in your app.
 <raven-inapp-angular
       [color]="<color>"
       [indicatorType]="<indicator_type>"
+      [fontStyle]="<fontStyle>"
       [userId]="<user_id>"
       [appId]="<app_id>"
       [signature]="<signature>"
@@ -57,8 +58,17 @@ Please refer to the below code to consume the InApp Angular SDK in your app.
 </raven-inapp-angular>
 ```
 
-* indicatorType accepts two values i.e 'dot' and 'count'.
-* If you are passing strings directly without storing in variable, please enclose them in single quotes.
+|Attribute | Purpose | Examples |
+|--------- | ------- | -------- |
+|color | This color gets applied to the button's and loading spinner in the sdk. | 'red', '#FF0000', 'rgb(255,0,0)' (only strings) |
+|indicatorType| This attribute accepts only two values i.e 'dot', 'count'. This attribute indicates the new notification arrival. The 'dot' show's a dot on the bell icon whenever a new notifications comes and the 'count' show's the count of new notifications. | 'dot', 'count' (only strings) |
+|fontStyle| This attribute can be used to change the font family in the sdk. | 'Times', 'Courier' etc (only strings) |
+|userId | | |
+|appId| | | 
+|signature| | |
+|onClickNotification| This attribute can be used to control the click action whenever user click's on the notification.|You have to pass the function's reference which will be triggered when user clicks on the notification. |
 
+* Note: userId, appId and signature are the compulsory attributes, remaining are optional.
+ 
 You can use this code in any of the \*.component.html files.
 
