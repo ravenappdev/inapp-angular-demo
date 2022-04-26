@@ -1,27 +1,44 @@
-# DemoNotificationCenter
+# InApp Angular SDK Demo App
+This sample app shows how to use InApp Angular SDK in your own Angular. The InApp Angular SDK allows you to -
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+* Manage notification center in you app.
 
-## Development server
+#InApp Angular SDK:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You can visit our [SDK docs](https://github.com/ravenappdev/inapp-angular-sdk) to setup the InApp angular SDK in your app.
 
-## Code scaffolding
+## How to setup this demo app on your computer
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Step 1.&#x20;
 
-## Build
+If you haven't installed angular cli, install it using the following command:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm install -g @angular/cli
+```
 
-## Running unit tests
+If you are using a mac, use 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+sudo npm install -g @angular/cli
+```
 
-## Running end-to-end tests
+### Step2.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+After installing angular cli, run the following command in the project root directory:
 
-## Further help
+```
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Step3.
+
+Change the userId, appId and signature variables in app.component.ts
+
+### Step4.
+
+Run the following command in the project root directory to start the app:
+
+```
+ng serve
+```
