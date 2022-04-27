@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  userId: any;
+  userId: any ;
   appId: any;
   signature: any;
   title = 'demo-notification-center';

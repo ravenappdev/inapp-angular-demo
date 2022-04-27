@@ -1,15 +1,14 @@
 <div class="navbar">
   <h3>Raven</h3>
   <div class="notification-center">
-    <raven-inapp-angular
+    <inapp-notification-center
       [color]="'rgb(255,0,0)'"
       [indicatorType]="'count'"
-      [fontStyle]="'courier'"
       [userId]="userId"
       [appId]="appId"
       [signature]="signature"
       [onClickNotification]="callbackFunction"
     >
-    </raven-inapp-angular>
+    </inapp-notification-center>
   </div>
 </div>
