@@ -1,13 +1,11 @@
-# InApp Angular SDK Demo App
-This sample app shows how to use InApp Angular SDK in your own Angular. The InApp Angular SDK allows you to -
+# In-App Angular SDK Demo
+This sample app shows how to use Raven's In-App Angular SDK in your own Angular app.
 
-* Manage notification center in you app.
+You can visit our [Angular SDK docs](https://github.com/ravenappdev/inapp-angular-sdk) to setup In-App notification center in your app.
 
-#InApp Angular SDK:
+![Raven In-App Demo](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MG-HQd2A2Z9XgtUEjJF%2Fuploads%2FesXWPabEORwoenqBl7ti%2Fezgif.com-gif-maker%20(10).gif?alt=media&token=e1884cd3-3939-4e85-af7a-279f37aca59d)
 
-You can visit our [SDK docs](https://github.com/ravenappdev/inapp-angular-sdk) to setup the InApp angular SDK in your app.
-
-## How to setup this demo app on your computer
+## How to use the demo app
 
 ### Step 1.&#x20;
 
@@ -33,7 +31,7 @@ npm install
 
 ### Step3.
 
-Change the userId, appId and signature variables in app.component.ts
+Change the userId, appId and signature variables in app.component.ts. More details on this present in the SDK docs.
 
 ### Step4.
 
