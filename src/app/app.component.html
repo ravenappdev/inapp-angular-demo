@@ -1,14 +1,14 @@
 <div class="navbar">
   <h3>Raven</h3>
-  <div class="notification-center">
-    <inapp-notification-center
-      [color]="'rgb(255,0,0)'"
-      [indicatorType]="'count'"
-      [userId]="userId"
-      [appId]="appId"
-      [signature]="signature"
-      [onClickNotification]="callbackFunction"
-    >
-    </inapp-notification-center>
-  </div>
+  <inapp-notification-center
+    [color]=""
+    [indicatorType]="'count'"
+    [userId]="userId"
+    [appId]="appId"
+    [signature]="signature"
+    [displayStyle]="'bubble'"
+    [position]="'right'"
+    [onClickNotification]="callbackFunction"
+  >
+  </inapp-notification-center>
 </div>
